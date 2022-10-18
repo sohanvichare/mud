@@ -34,21 +34,21 @@ export function createProvider({ chainId, jsonRpcUrl, wsRpcUrl, options }: Provi
 
   async function connect() {
     if (externalProvider && externalProvider.request) {
-      await externalProvider.request({
-        method: "wallet_addEthereumChain",
-        params: [
-          {
-            chainId: "0x" + chainId.toString(16),
-            chainName: "MUD",
-            rpcUrls: [jsonRpcUrl],
-            nativeCurrency: {
-              name: "ETH",
-              symbol: "ETH",
-              decimals: 18,
-            },
-          },
-        ],
-      });
+      // await externalProvider.request({
+      //   method: "wallet_addEthereumChain",
+      //   params: [
+      //     {
+      //       chainId: "0x" + chainId.toString(16),
+      //       chainName: "MUD",
+      //       rpcUrls: [jsonRpcUrl],
+      //       nativeCurrency: {
+      //         name: "ETH",
+      //         symbol: "ETH",
+      //         decimals: 18,
+      //       },
+      //     },
+      //   ],
+      // });
       await externalProvider.request({ method: "eth_requestAccounts" });
     }
   }
