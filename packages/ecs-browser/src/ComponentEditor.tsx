@@ -3,7 +3,7 @@ import { Layers, removeComponent } from "@latticexyz/recs";
 import { AnyComponent, EntityIndex, Schema } from "@latticexyz/recs/src/types";
 import { ComponentBrowserButton, ComponentEditorContainer, ComponentTitle } from "./StyledComponents";
 import { ComponentValueEditor } from "./ComponentValueEditor";
-import { SetContractComponentFunction } from "./types";
+import { hasContract, SetContractComponentFunction } from "./types";
 import { useComponentValueStream } from "@latticexyz/std-client";
 
 export const ComponentEditor = ({
@@ -15,7 +15,7 @@ export const ComponentEditor = ({
   entity: EntityIndex;
   component: AnyComponent;
   layers: Layers;
-  setContractComponentValue: SetContractComponentFunction<Schema>;
+  setContractComponentValue?: SetContractComponentFunction<Schema>;
 }) => {
   const value = useComponentValueStream(component, entity);
   if (!value) return null;
@@ -24,7 +24,15 @@ export const ComponentEditor = ({
     <ComponentEditorContainer>
       <ComponentTitle>
         {component.id}
-        <ComponentBrowserButton onClick={() => removeComponent(component, entity)}>Remove</ComponentBrowserButton>
+        <ComponentBrowserButton
+          onClick={() => {
+            removeComponent(component, entity);
+
+            if (setContractComponentValue && hasContract(component)) setContractComponentValue(entity, component, {});
+          }}
+        >
+          Remove
+        </ComponentBrowserButton>
       </ComponentTitle>
       <ComponentValueEditor
         entity={entity}

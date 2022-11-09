@@ -3,6 +3,99 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/latticexyz/mud/compare/v1.25.1...v1.26.0) (2022-11-07)
+
+### Features
+
+- **relay:** check message data doesn't exceed a configurable limit ([#195](https://github.com/latticexyz/mud/issues/195)) ([4e35ed3](https://github.com/latticexyz/mud/commit/4e35ed35eacbc68193d3fd561f085380294393e7))
+- **services:** admin endpoint on faucet ([#238](https://github.com/latticexyz/mud/issues/238)) ([282fd69](https://github.com/latticexyz/mud/commit/282fd695aafe493e692629cf74af764c8293a238))
+
+## [1.25.1](https://github.com/latticexyz/mud/compare/v1.25.0...v1.25.1) (2022-11-03)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.25.0](https://github.com/latticexyz/mud/compare/v1.24.1...v1.25.0) (2022-11-03)
+
+**Note:** Version bump only for package @latticexyz/services
+
+## [1.24.1](https://github.com/latticexyz/mud/compare/v1.24.0...v1.24.1) (2022-10-29)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.24.0](https://github.com/latticexyz/mud/compare/v1.23.1...v1.24.0) (2022-10-28)
+
+### Features
+
+- v2 endpoint for pruned snapshot that returns entities as raw bytes ([#215](https://github.com/latticexyz/mud/issues/215)) ([28cce1e](https://github.com/latticexyz/mud/commit/28cce1e8a1240d72363fe786704e7fe976f7c995))
+
+## [1.23.1](https://github.com/latticexyz/mud/compare/v1.23.0...v1.23.1) (2022-10-28)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.23.0](https://github.com/latticexyz/mud/compare/v1.22.0...v1.23.0) (2022-10-26)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.22.0](https://github.com/latticexyz/mud/compare/v1.21.0...v1.22.0) (2022-10-26)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.21.0](https://github.com/latticexyz/mud/compare/v1.20.0...v1.21.0) (2022-10-26)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.20.0](https://github.com/latticexyz/mud/compare/v1.19.0...v1.20.0) (2022-10-22)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.19.0](https://github.com/latticexyz/mud/compare/v1.18.0...v1.19.0) (2022-10-21)
+
+### Bug Fixes
+
+- checksum address / value when pruning snapshot ([#214](https://github.com/latticexyz/mud/issues/214)) ([64fd178](https://github.com/latticexyz/mud/commit/64fd178358ac05bb032cfd8cc1a1b87effa769ad))
+
+# [1.18.0](https://github.com/latticexyz/mud/compare/v1.17.0...v1.18.0) (2022-10-21)
+
+### Features
+
+- service stabilizations, send ecs tx on drip, new pruned snapshot endpoint ([#204](https://github.com/latticexyz/mud/issues/204)) ([d0de185](https://github.com/latticexyz/mud/commit/d0de185ca7fa2418064706928853e5cd691bdde9))
+
+# [1.17.0](https://github.com/latticexyz/mud/compare/v1.16.0...v1.17.0) (2022-10-19)
+
+### Features
+
+- allow specific snapshot chunk ratio ([#212](https://github.com/latticexyz/mud/issues/212)) ([827d972](https://github.com/latticexyz/mud/commit/827d972ac9ca11918520b5f040045dfb4cca1552))
+
+# [1.16.0](https://github.com/latticexyz/mud/compare/v1.15.0...v1.16.0) (2022-10-19)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.15.0](https://github.com/latticexyz/mud/compare/v1.14.2...v1.15.0) (2022-10-18)
+
+**Note:** Version bump only for package @latticexyz/services
+
+## [1.14.2](https://github.com/latticexyz/mud/compare/v1.14.1...v1.14.2) (2022-10-18)
+
+**Note:** Version bump only for package @latticexyz/services
+
+## [1.14.1](https://github.com/latticexyz/mud/compare/v1.14.0...v1.14.1) (2022-10-18)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.14.0](https://github.com/latticexyz/mud/compare/v1.13.0...v1.14.0) (2022-10-18)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.13.0](https://github.com/latticexyz/mud/compare/v1.12.0...v1.13.0) (2022-10-15)
+
+**Note:** Version bump only for package @latticexyz/services
+
+# [1.12.0](https://github.com/latticexyz/mud/compare/v1.11.0...v1.12.0) (2022-10-12)
+
+### Features
+
+- fail without error on certain checks and other improvements ([#202](https://github.com/latticexyz/mud/issues/202)) ([f5d565e](https://github.com/latticexyz/mud/commit/f5d565e8c3b1dbd7a1c80a63b4365ce09354c6cf))
+
 # [1.11.0](https://github.com/latticexyz/mud/compare/v1.10.0...v1.11.0) (2022-10-11)
 
 ### Features
